@@ -135,6 +135,6 @@ tasks.withType(JavaCompile) {
     DO SISTEMA QUE IRÁ EXECUTAR A APLICAÇÃO.
 */
 // WINDOWS
-war.destinationDir = file "target/windows/2.2.10-220412"
+war.destinationDir = file "target/windows/2.2.11-220412"
 // LINUX
-//war.destinationDir = file "target/linux/2.2.10-220412"
+//war.destinationDir = file "target/linux/2.2.11-220412"

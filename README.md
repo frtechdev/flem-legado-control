@@ -6,7 +6,7 @@
 <a href="">[![Code Size](https://img.shields.io/github/languages/code-size/frtechdev/flem-legado-control)](https://github.com/frtechdev/flem-legado-control)</a>
 <a href="">[![Repo Size](https://img.shields.io/github/repo-size/frtechdev/flem-legado-control)](https://github.com/frtechdev/flem-legado-control)</a>
 <a href="">[![Last Commit](https://img.shields.io/github/last-commit/frtechdev/flem-legado-control)](https://github.com/frtechdev/flem-legado-control/)</a>
-<a href="">![Version](https://img.shields.io/badge/version-2.2.10-005bff) </a>
+<a href="">![Version](https://img.shields.io/badge/version-2.2.11-005bff) </a>
 
 </div>
 <hr>
@@ -18,6 +18,7 @@
 - [Como usar este repositório](#como-usar-este-repositório)
   - [Arquivo POM](#arquivo-pom)
   - [Diretório target](#diretório-target)
+- [Colaboradores](#colaboradores)
 
 <hr>
 
@@ -44,3 +45,11 @@ atualizados. Confira os comentários inline do arquivo. Para mais informações 
 
 Contém o arquivo WAR de deploy da aplicação, utilizada sob Apache Tomcat / PSI Probe.
 O diretório target.backup contém a última build estável realizada na VM que contém a pasta do projeto original. Guardado apenas como referência.
+
+<hr>
+
+## Colaboradores
+
+<a href="https://github.com/frtechdev/flem-legado-control/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=frtechdev/flem-legado-control" />
+</a>

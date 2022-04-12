@@ -4,13 +4,11 @@
 
 <hr>
 
-<div align="center">
+## v2.2.11-220412
 
-<a href="">[![Last Commit](https://img.shields.io/github/last-commit/frtechdev/flem-legado-control)](https://github.com/frtechdev/flem-legado-control/) </a>
-<a href="">![Version](https://img.shields.io/badge/version-2.2.10-005bff)</a>
+- Adição de informação de colaboradores no readme
+
 <br>
-
-</div>
 
 ## v2.2.10-220412
 
@@ -27,8 +25,9 @@
   - struts-scripting:1.3.10
   - struts-taglib:1.3.8
   - struts-tiles:1.3.10
-    <br>
+
+<br>
 
 ## Commit Inicial
 
-- Commit IniciaL
+- Commit Inicial
