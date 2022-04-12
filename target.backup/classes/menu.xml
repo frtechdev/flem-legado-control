@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE grupo SYSTEM "padrao.dtd">
+<grupo nome="Menu" >
+    <menu nome="Aplicacao" >
+        <item nome="Novo" href="Aplicacao.do?metodo=novo" perfil="gerapp" />
+        <item nome="Listar" href="Aplicacao.do" perfil="gerapp" />
+    </menu>
+    <menu nome="Aplicativo Intranet" >
+        <item nome="Novo" href="AplicativoIntranet.do?metodo=novo" perfil="gerapp" />
+        <item nome="Listar" href="AplicativoIntranet.do" perfil="gerapp" />
+    </menu>
+    <menu nome="Funcionalidade" >
+        <item nome="Nova" href="Funcionalidade.do?metodo=novo" perfil="gerfun" />
+        <item nome="Listar" href="Funcionalidade.do" perfil="gerfun"/>
+    </menu>
+    <menu nome="Perfil" >
+        <item nome="Novo" href="Perfil.do?metodo=novo" perfil="gerperfil" />
+        <item nome="Listar" href="Perfil.do" perfil="gerperfil"/>
+    </menu>
+    <menu nome="Departamento" >
+        <item nome="Listar" href="DepartamentoCentroCusto.do" perfil="gerusuario" />
+    </menu>
+    <menu nome="Usuario" >
+        <item nome="Listar" href="Usuario.do" perfil="gerusuario"/>
+        <item nome="Novo Usuario (Terceiro)" href="Usuario.do?metodo=novo" perfil="gerusuario" />
+        <item nome="Colaboradores sem usuario" href="Colaborador.do" perfil="gerusuario"/>
+    </menu>
+    
+    <menu nome="RH" >
+        <item nome="Bloquear acesso AD" href="ActiveDirectory.do" perfil="bloqueioAD"/>
+        <item nome="Bloquear acesso Senha" href="AutenticacaoSenha.do" perfil="bloqueioSE"/>
+    </menu>
+    
+</grupo>

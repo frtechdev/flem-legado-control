@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+
+    <!-- sample tiles definitions -->
+    <definition name="def.base" path="/layout.jsp">
+        <put name="header" value="/inc/header.jsp" />
+        <put name="menu"   value="/inc/sidebar.jsp" />
+        <put name="footer" value="/inc/footer.jsp" />
+    </definition>
+
+
+    <!-- HOME DEFS -->
+    <definition name="def.home" extends="def.base" >
+        <put name="body" value="/index.jsp" />
+    </definition>
+    <!-- HOME DEFS -->
+
+
+    <!-- USUARIO -->
+    <definition name="def.usuario.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/lista.jsp" />
+    </definition>
+    <definition name="def.usuario.novo" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/novo.jsp" />
+    </definition>
+    <definition name="def.usuario.seleciona" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/alterar.jsp" />
+    </definition>
+    <definition name="def.usuario.alterarAutenticacao" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/alterarAutenticacao.jsp" />
+    </definition>
+    <definition name="def.usuario.listaColaborador" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/listaColaborador.jsp" />
+    </definition>
+    <definition name="def.usuario.novoColaborador" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/novoColaborador.jsp" />
+    </definition>
+    <definition name="def.usuario.perfil" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/listaUP.jsp" />
+    </definition>
+    
+    <definition name="def.usuario.perfilintranet" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/listaIntranet.jsp" />
+    </definition>
+    
+    <definition name="def.usuario.cargaUsuario" extends="def.base" >
+        <put name="body" value="/pages/acesso/usuario/cargaUsuario.jsp" />
+    </definition>
+    <!-- USUARIO -->
+
+    <!-- APLICATIVO INTRANET -->
+    <definition name="def.AplicativoIntranet.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/aplicativo_intranet/lista.jsp" />
+    </definition>
+    <definition name="def.AplicativoIntranet.novo" extends="def.base" >
+        <put name="body" value="/pages/acesso/aplicativo_intranet/novo.jsp" />
+    </definition>
+    <definition name="def.AplicativoIntranet.seleciona" extends="def.base" >
+        <put name="body" value="/pages/acesso/aplicativo_intranet/alterar.jsp" />
+    </definition>
+    <!-- APLICATIVO INTRANET -->
+
+    <!-- APLICACAO -->
+    <definition name="def.aplicacao.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/aplicacao/lista.jsp" />
+    </definition>
+    <definition name="def.aplicacao.novo" extends="def.base" >
+        <put name="body" value="/pages/acesso/aplicacao/novo.jsp" />
+    </definition>
+    <definition name="def.aplicacao.seleciona" extends="def.base" >
+        <put name="body" value="/pages/acesso/aplicacao/alterar.jsp" />
+    </definition>
+    <!-- APLICACAO -->
+
+
+    <!-- PERFIL -->
+    <definition name="def.perfil.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/perfil/lista.jsp" />
+    </definition>
+    <definition name="def.perfil.novo" extends="def.base" >
+        <put name="body" value="/pages/acesso/perfil/novo.jsp" />
+    </definition>
+    <definition name="def.perfil.seleciona" extends="def.base" >
+        <put name="body" value="/pages/acesso/perfil/alterar.jsp" />
+    </definition>
+    <definition name="def.perfil.funcionalidade" extends="def.base" >
+        <put name="body" value="/pages/acesso/perfil/listaPF.jsp" />
+    </definition>
+        <definition name="def.perfil.usuarios" extends="def.base" >
+        <put name="body" value="/pages/acesso/perfil/usuarios.jsp" />
+    </definition>
+    <!-- PERFIL -->
+
+
+    <!-- FUNCIONALIDADES -->
+    <definition name="def.funcionalidade.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/funcionalidade/lista.jsp" />
+    </definition>
+    <definition name="def.funcionalidade.novo" extends="def.base" >
+        <put name="body" value="/pages/acesso/funcionalidade/novo.jsp" />
+    </definition>
+    <definition name="def.funcionalidade.seleciona" extends="def.base" >
+        <put name="body" value="/pages/acesso/funcionalidade/alterar.jsp" />
+    </definition>
+    <definition name="def.funcionalidade.usuarios" extends="def.base" >
+        <put name="body" value="/pages/acesso/funcionalidade/usuarios.jsp" />
+    </definition>
+    <!-- FUNCIONALIDADES -->
+
+
+    <!-- CENTROCUSTO -->
+    <definition name="def.centroCusto.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/centrocusto/lista.jsp" />
+    </definition>
+    <!-- CENTROCUSTO -->
+
+
+    <!-- DEPARTAMENTO -->
+    <definition name="def.departamento.usuario.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/departamentousuario/lista.jsp" />
+    </definition>
+    <definition name="def.departamento.centroCusto.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/departamentocentrocusto/lista.jsp" />
+    </definition>
+    <definition name="def.departamento.centroCusto.editar" extends="def.base" >
+        <put name="body" value="/pages/acesso/departamentocentrocusto/editar.jsp" />
+    </definition>
+    <definition name="def.departamento.centroCusto.tipo_solicitacao" extends="def.base" >
+        <put name="body" value="/pages/acesso/departamentocentrocusto/tipo_solicitacao.jsp" />
+    </definition>
+    <!-- DEPARTAMENTO -->
+    
+    
+    <!-- USUARIO -->
+    <definition name="def.ad.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/active_directory/lista.jsp" />
+    </definition>
+    <definition name="def.ad.novo" extends="def.base" >
+        <put name="body" value="/pages/acesso/active_directory/novo.jsp" />
+    </definition>
+    <definition name="def.ad.seleciona" extends="def.base" >
+        <put name="body" value="/pages/acesso/active_directory/alterar.jsp" />
+    </definition>
+    <!-- USUARIO -->
+    
+    <!-- USUARIO -->
+    <definition name="def.se.lista" extends="def.base" >
+        <put name="body" value="/pages/acesso/autenticacao_senha/lista.jsp" />
+    </definition>
+    <definition name="def.se.novo" extends="def.base" >
+        <put name="body" value="/pages/acesso/autenticacao_senha/novo.jsp" />
+    </definition>
+    <definition name="def.se.seleciona" extends="def.base" >
+        <put name="body" value="/pages/acesso/autenticacao_senha/alterar.jsp" />
+    </definition>
+    <!-- USUARIO -->
+
+</tiles-definitions>

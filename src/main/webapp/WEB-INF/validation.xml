@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
+          "http://struts.apache.org/commons/dtds/validator_1_1_3.dtd">
+<form-validation>
+    <global>
+        <constant>
+            <constant-name>postalCode</constant-name>
+            <constant-value>^\d{5}\d*$</constant-value>
+        </constant>
+    </global>
+    <formset>
+        
+        <form name="aplicacaoForm">
+            <field property="nome" depends="required"> 
+                <arg key="label.nome"/>
+            </field>
+            <field property="nomeCurto" depends="required">
+                <arg key="label.nomeCurto"/>
+            </field>
+            <field property="descricao" depends="required">
+                <arg key="label.descricao"/>
+            </field>
+            <field property="versao" depends="required">
+                <arg key="label.versao"/>
+            </field>
+            <field property="linguagem" depends="required">
+                <arg key="label.linguagem"/>
+            </field>
+            <field property="servidor" depends="required">
+                <arg key="label.servidor"/>
+            </field>
+        </form>
+        <form name="funcionalidadeForm">
+            <field property="idAplicacao" depends="required">
+                <arg key="label.aplicacao"/>
+            </field>
+            <field property="nome" depends="required">
+                <arg key="label.nome"/>
+            </field>
+            <field property="nomeCurto" depends="required">
+                <arg key="label.nomeCurto"/>
+            </field>
+            <field property="descricao" depends="required">
+                <arg key="label.descricao"/>
+            </field>
+        </form>
+        
+        <form name="perfilForm">
+            <field property="nome" depends="required">
+                <arg key="label.nome"/>
+            </field>
+            <field property="nomeCurto" depends="required">
+                <arg key="label.nomeCurto"/>
+            </field>
+            <field property="descricao" depends="required">
+                <arg key="label.descricao"/>
+            </field>
+        </form>
+        
+        <form name="usuarioForm">
+            <field property="nome" depends="required">
+                <arg key="label.nome"/>
+            </field>
+            <field property="login" depends="required">
+                <arg key="label.nomeCurto"/>
+            </field>
+            <field property="tipoAutenticacao" depends="required">
+                <arg key="label.tipoAutenticacao"/>
+            </field>
+        </form>
+        <form name="adForm">
+            <field property="bloqueio.dataInicio" depends="required">
+                <msg name="required" resource="false" key="Informe a data inicial"/>
+            </field>            
+            <field property="bloqueio.dataFim"  depends="required">
+                <msg name="required" resource="false" key="Informe a data final"/>
+            </field> 
+        </form>
+        <form name="seForm">
+            <field property="bloqueio.dataInicio" depends="required">
+                <msg name="required" resource="false" key="Informe a data inicial"/>
+            </field>            
+            <field property="bloqueio.dataFim"  depends="required">
+                <msg name="required" resource="false" key="Informe a data final"/>
+            </field> 
+        </form>
+    </formset>
+</form-validation>

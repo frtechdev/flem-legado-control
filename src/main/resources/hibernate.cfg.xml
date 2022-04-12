@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration
+    PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory name="session-control">
+
+        <!-- BD DE PRODUCAO
+        <property name="hibernate.connection.url">jdbc:jtds:sqlserver://SERVIDORBD;databaseName=BDAA;</property>
+        <property name="hibernate.connection.username">Control</property>
+        <property name="hibernate.connection.password">6TSq651Z</property> -->
+         
+        <property name="hibernate.connection.url">jdbc:jtds:sqlserver://SRVWINSQLPRD02;databaseName=BDAA;</property>
+        <property name="hibernate.connection.username">Control</property>
+        <property name="hibernate.connection.password">Wu3S7nVlZFvvTNzlW/2b059FjcJC3aHl03DzxIEGWb8=</property>
+        
+        <!-- BD DE DESENVOLVIMENTO -->
+        <!--property name="hibernate.connection.url">jdbc:jtds:sqlserver://trancoso;databaseName=BDAA</property>
+        <property name="hibernate.connection.username">Control</property>
+        <property name="hibernate.connection.password">6TSq651Z</property-->
+        
+        <!--property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+        <property name="hibernate.hbm2ddl.auto">update</property-->
+        <!--property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property-->
+        <!--property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property-->
+
+        <mapping class="br.org.flem.control.acesso.negocio.Usuario" />
+        <mapping class="br.org.flem.control.acesso.negocio.Perfil" />
+        <mapping class="br.org.flem.control.acesso.negocio.Funcionalidade" />
+        <mapping class="br.org.flem.control.acesso.negocio.Aplicacao" />
+        <mapping class="br.org.flem.control.acesso.negocio.CentroCustoUsuario" />
+        <mapping class="br.org.flem.control.acesso.negocio.DepartamentoUsuario" />
+        <mapping class="br.org.flem.control.acesso.negocio.DepartamentoCentroCusto" />
+        <mapping class="br.org.flem.control.acesso.negocio.BloqueioAfastamentoAD" />
+        <mapping class="br.org.flem.control.acesso.negocio.Log" />
+        <mapping class="br.org.flem.control.acesso.negocio.DepartamentoTipoSolicitacao"/>
+    </session-factory>
+</hibernate-configuration>

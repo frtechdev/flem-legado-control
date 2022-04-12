@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="loginForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="usuario" type="java.lang.String" />
+            <form-property name="senha" type="java.lang.String" />
+        </form-bean>
+        
+        <form-bean name="centroCustoForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="codigo" type="java.lang.String" />
+            <form-property name="nome" type="java.lang.String" />
+            <form-property name="tipo" type="java.lang.String" />
+            <form-property name="status" type="java.lang.String" />
+        </form-bean>
+     
+        <form-bean name="aplicacaoForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="nome" type="java.lang.String" />
+            <form-property name="nomeCurto" type="java.lang.String" />
+            <form-property name="descricao" type="java.lang.String" />
+            <form-property name="versao" type="java.lang.String" />
+            <form-property name="linguagem" type="java.lang.String" />
+            <form-property name="banco" type="java.lang.String" />
+            <form-property name="servidor" type="java.lang.String" />
+            <form-property name="observacao" type="java.lang.String" />
+            <form-property name="listaFuncionalidades" type="java.util.ArrayList" />
+            <form-property name="ids_exclusao" type="java.lang.String[]" />
+        </form-bean>
+       
+        <form-bean name="funcionalidadeForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="idAplicacao" type="java.lang.Integer" />
+            <form-property name="listaAplicacao" type="java.util.ArrayList" />
+            <form-property name="nome" type="java.lang.String" />
+            <form-property name="nomeCurto" type="java.lang.String" />
+            <form-property name="descricao" type="java.lang.String" />
+            <form-property name="ids_exclusao" type="java.lang.String[]" />
+            <form-property name="usuario" type="java.lang.String" />
+            <form-property name="login" type="java.lang.String" />
+            <form-property name="lotacao" type="java.lang.String" />
+
+            
+        </form-bean>
+       
+        <form-bean name="perfilForm" type="org.apache.struts.action.DynaActionForm"  >
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="idAplicacao" type="java.lang.String" />
+            <form-property name="nomePerfilForm" type="java.lang.String" />
+            <form-property name="nome" type="java.lang.String" />
+            <form-property name="nomeCurto" type="java.lang.String" />
+            <form-property name="descricao" type="java.lang.String" />
+            <form-property name="ids_exclusao" type="java.lang.String[]" />
+        </form-bean>
+        
+        <form-bean name="aplicativoIntranetForm" type="org.apache.struts.action.DynaActionForm">
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="nomeAplicacaoIntranet" type="java.lang.String" />
+            <form-property name="nome" type="java.lang.String" />
+            <form-property name="titulo" type="java.lang.String" />
+            <form-property name="url" type="java.lang.String" />
+            <form-property name="target" type="java.lang.String" />
+            <form-property name="imagem" type="java.lang.String" />
+            <form-property name="ordem" type="java.lang.String" />
+            <form-property name="ativo" type="java.lang.String" />
+            <form-property name="seguranca" type="java.lang.String" />
+            <form-property name="ids_exclusao" type="java.lang.String[]" />
+
+        </form-bean>
+       
+        <form-bean name="usuarioForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="nome" type="java.lang.String" />
+            <form-property name="login" type="java.lang.String" />
+            <form-property name="situacao" type="java.lang.String" />
+            <form-property name="lotacaoDominio" type="java.lang.String" />
+            <form-property name="tipoAutenticacao" type="java.lang.Integer" />
+            <form-property name="tipoSolicitacao" type="java.lang.Integer" />
+            <form-property name="senha" type="java.lang.String" />
+            <form-property name="confirmaSenha" type="java.lang.String" />
+            <form-property name="ids_exclusao" type="java.lang.String[]" />
+
+        </form-bean>
+        
+        
+        
+        <form-bean name="adForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="bloqueio" type="br.org.flem.control.acesso.negocio.BloqueioAfastamentoAD" />
+        </form-bean>
+        
+        <form-bean name="seForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="bloqueio" type="br.org.flem.control.acesso.negocio.BloqueioAfastamentoAD" />
+        </form-bean>
+        
+        <form-bean name="centroCustoUsuarioForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="id" type="java.lang.Integer" />
+            <form-property name="nomeCentroCustoUsuario" type="java.lang.String" />
+        </form-bean>
+
+        <form-bean name="departamentoUsuarioForm" type="org.apache.struts.action.DynaActionForm" >
+            <form-property name="nomeDepartamento" type="java.lang.String" />
+        </form-bean>
+
+        <form-bean name="departamentoCentroCustoForm" type="org.apache.struts.action.DynaActionForm" >
+           <form-property name="id" type="java.lang.Integer" />
+           <form-property name="centroCusto" type="java.lang.String" />
+            <form-property name="nomeDepartamentoCentroCusto" type="java.lang.String" />
+            <form-property name="tipoSolicitacao" type="java.lang.Integer" />
+            <form-property name="liberacaoViagemRetroativo" type="java.lang.Boolean" />
+        </form-bean>
+
+    </form-beans>
+    
+    <global-exceptions />
+    
+    <global-forwards >
+        <forward name="home" path="/Home.do"/>
+    </global-forwards>
+
+
+    <action-mappings>
+        <action path="/Home" forward="def.home"/>
+        
+        <action path="/Aplicacao" name="aplicacaoForm" type="br.org.flem.control.acesso.action.AplicacaoAction" parameter="metodo" scope="request" validate="true" >
+            <forward name="lista" path="def.aplicacao.lista"/>
+            <forward name="novo" path="def.aplicacao.novo"/>
+            <forward name="seleciona" path="def.aplicacao.seleciona"/>
+            <forward name="redirect" path="Aplicacao.do" redirect="true"/>
+        </action>
+        
+        <action path="/AplicativoIntranet" name="aplicativoIntranetForm" type="br.org.flem.control.acesso.action.AplicativoIntranetAction" parameter="metodo" scope="request" validate="true" >
+            <forward name="listaintranet" path="def.AplicativoIntranet.lista"/>
+            <forward name="novo" path="def.AplicativoIntranet.novo"/>
+            <forward name="seleciona" path="def.AplicativoIntranet.seleciona"/>
+            <forward name="redirect" path="AplicativoIntranet.do" redirect="true"/>
+        </action>
+
+        
+        <action path="/Usuario" name="usuarioForm" type="br.org.flem.control.acesso.action.UsuarioAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.usuario.lista"/>
+            <forward name="novo" path="def.usuario.novo"/>
+            <forward name="seleciona" path="def.usuario.seleciona"/>
+            <forward name="alterarAutenticacao" path="def.usuario.alterarAutenticacao"/>
+            <forward name="redirect" path="Usuario.do" redirect="true"/>
+        </action>
+        
+        <action path="/Perfil" name="perfilForm" type="br.org.flem.control.acesso.action.PerfilAction" parameter="metodo" scope="request" validate="true" >
+            <forward name="lista" path="def.perfil.lista"/>
+            <forward name="novo" path="def.perfil.novo"/>
+            <forward name="seleciona" path="def.perfil.seleciona"/>
+            <forward name="usuarios" path="def.perfil.usuarios"/>
+            <forward name="redirect" path="Perfil.do" redirect="true"/>
+        </action>
+        
+        <action path="/Funcionalidade" name="funcionalidadeForm" type="br.org.flem.control.acesso.action.FuncionalidadeAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.funcionalidade.lista"/>
+            <forward name="novo" path="def.funcionalidade.novo"/>
+            <forward name="seleciona" path="def.funcionalidade.seleciona"/>
+            <forward name="usuarios" path="def.funcionalidade.usuarios"/>
+            <forward name="redirect" path="Funcionalidade.do" redirect="true"/>
+        </action>
+        
+        <action path="/Colaborador" name="usuarioForm" type="br.org.flem.control.acesso.action.ColaboradorAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.usuario.listaColaborador"/>
+            <forward name="novo" path="def.usuario.novoColaborador"/>
+            <forward name="redirect" path="Colaborador.do" redirect="true"/>
+        </action>
+                
+        <action path="/PerfilFuncionalidade" name="funcionalidadeForm" type="br.org.flem.control.acesso.action.PerfilFuncionalidadeAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.perfil.funcionalidade"/>
+            <forward name="redirect" path="PerfilFuncionalidade.do" redirect="true"/>
+        </action>
+        
+        <action path="/UsuarioPerfil" name="perfilForm" type="br.org.flem.control.acesso.action.UsuarioPerfilAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.usuario.perfil"/>
+            <forward name="redirect" path="UsuarioPerfil.do" redirect="true"/>
+        </action>
+        
+        <action path="/UsuarioAplicativoIntranet" name="aplicativoIntranetForm" type="br.org.flem.control.acesso.action.UsuarioAplicativoIntranetAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="listaIntranet" path="def.usuario.perfilintranet"/>
+            <forward name="redirect" path="UsuarioAplicativoIntranet.do" redirect="true"/>
+        </action>
+        
+
+        <action path="/CentroCustoUsuario" name="centroCustoUsuarioForm" type="br.org.flem.control.acesso.action.CentroCustoUsuarioAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.centroCusto.lista"/>
+            <forward name="redirect" path="CentroCustoUsuario.do" redirect="true"/>
+        </action>
+
+        <action path="/DepartamentoUsuario" name="departamentoUsuarioForm" type="br.org.flem.control.acesso.action.DepartamentoUsuarioAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.departamento.usuario.lista"/>
+            <forward name="redirect" path="DepartamentoUsuario.do" redirect="true"/>
+        </action>
+
+        <action path="/DepartamentoCentroCusto" name="departamentoCentroCustoForm" type="br.org.flem.control.acesso.action.DepartamentoCentroCustoAction" parameter="metodo" scope="session" validate="true" >
+            <forward name="lista" path="def.departamento.centroCusto.lista"/>
+            <forward name="editar" path="def.departamento.centroCusto.editar"/>
+            <forward name="tipo_solicitacao" path="def.departamento.centroCusto.tipo_solicitacao"/>
+            <forward name="redirect" path="DepartamentoCentroCusto.do?metodo=editar" redirect="true"/>
+            <forward name="redirect_lista" path="DepartamentoCentroCusto.do" redirect="true"/>
+        </action>
+        
+        <action path="/ActiveDirectory" name="adForm" type="br.org.flem.control.acesso.action.ActiveDirectoryAction" parameter="metodo" scope="request" validate="true" >
+            <forward name="lista" path="def.ad.lista"/>
+            <forward name="novo" path="def.ad.novo"/>
+            <forward name="seleciona" path="def.ad.seleciona"/>
+            <forward name="alterarAutenticacao" path="def.ad.alterarAutenticacao"/>
+            <forward name="redirect" path="ActiveDirectory.do" redirect="true"/>
+        </action>
+        
+        <action path="/AutenticacaoSenha" name="seForm" type="br.org.flem.control.acesso.action.AutenticacaoSenhaAction" parameter="metodo" scope="request" validate="true" >
+            <forward name="lista" path="def.se.lista"/>
+            <forward name="novo" path="def.se.novo"/>
+            <forward name="seleciona" path="def.se.seleciona"/>
+            <forward name="alterarAutenticacao" path="def.se.alterarAutenticacao"/>
+            <forward name="redirect" path="AutenticacaoSenha.do" redirect="true"/>
+        </action>
+        
+    </action-mappings>
+
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+    
+    <message-resources parameter="applicationresource"/>
+
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+   
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+        property="pathnames"
+        value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>
